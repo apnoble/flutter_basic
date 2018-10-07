@@ -34,6 +34,12 @@ class _MyHomePageState extends State<MyHomePage> {
     });
   }
 
+  void _incrementByTwo() {
+    setState(() {
+      _counter=_counter+2;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -52,19 +58,18 @@ class _MyHomePageState extends State<MyHomePage> {
               style: Theme.of(context).textTheme.display1,
             ),
             new IconButton(
-              icon: Icon(choices[0].icon),
-              onPressed: () {
-                // _select(choices[0]);
-              },
+              icon: Icon(Icons.looks_one),
+              onPressed: _incrementCounter,
+            ),
+            new IconButton(
+              icon: Icon(Icons.looks_two),
+              onPressed: _incrementByTwo,
             ),
           ],
         ),
       ),
-      floatingActionButton: new FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: new Icon(Icons.add),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+      
+      // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
