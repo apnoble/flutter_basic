@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
     return new MaterialApp(
       title: 'Alex App2',
       theme: new ThemeData(
-        primarySwatch: Colors.green,
+        primarySwatch: Colors.amber,
       ),
       home: new MyHomePage(title: 'Alex App 2'),
       debugShowCheckedModeBanner: false,

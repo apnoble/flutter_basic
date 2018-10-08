@@ -1,6 +1,6 @@
 # basic_flutter
 
-A new Flutter project.
+This a project just to test out flutter widgets and building an app.
 
 ## Getting Started
 
